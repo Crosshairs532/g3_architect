@@ -61,10 +61,11 @@ nav {
 }
 
 .banner-container {
-    padding: 50px 240px 40px 240px;
+    padding: 50px 200px 40px 200px;
 }
 
-.banner-content button {
+.banner-content button,
+.features button {
     margin-top: 30px;
     border-radius: 8px;
     background: #FF900E;
@@ -74,6 +75,47 @@ nav {
     padding: 20px 25px;
 }
 
+.features {
+    /* width: auto; */
+    display: flex;
+    align-items: center;
+    margin: 80px 150px 100px 150px;
+    gap: 70px;
+
+}
+
+
+.features-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.features-img img {
+    width: 300px;
+    height: 300px;
+}
+
+.features-description {
+    font-size: .9rem;
+}
+
+.features-title {
+    font-size: 2.5rem;
+}
+
+.span-1 {
+    color: #727272;
+}
+
+.span-2 {
+    color: black;
+}
+
+.span-3 {
+    color: #FF900E;
+}
+
 /* responsive */
 @media screen and (max-width:568px) {
     nav {
@@ -81,8 +123,21 @@ nav {
         flex-direction: column;
     }
 
-    .nav-links ul {
+    .nav-links ul,
+    .features {
         flex-direction: column;
+    }
+
+    .features {
+        margin: 0px;
+    }
+
+    .features-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .features-info {
+        padding: 10px;
     }
 
     .banner-container {
@@ -101,4 +156,5 @@ nav {
     .banner-content {
         width: auto;
     }
+
 }
