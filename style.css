@@ -138,7 +138,7 @@ nav {
     flex-direction: column;
     width: 500px;
     gap: 10px;
-    border: 1px solid;
+
 }
 
 .all-features h2 {
@@ -189,6 +189,43 @@ nav {
 
 .year_10 h2 {
     font-size: 3rem;
+}
+
+.all-facts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.fact-description {
+    width: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.facts {
+    width: 75%;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+
+}
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+
 }
 
 /* responsive */
@@ -251,6 +288,15 @@ nav {
         width: auto;
         /* padding: 20px; */
         position: static;
+    }
+
+    .all-facts {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .fact-description {
+        width: auto;
     }
 
 }
